@@ -1,0 +1,41 @@
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.accordion {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 1rem;
+}
+
+.accordion-items {
+    border: 0.2rem solid lightgrey;
+    border-radius: 1rem;
+    display: block;
+    padding: 1rem;
+}
+
+.wrapper {
+    width: 60%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.accordion-meme img {
+    height: 15rem;
+}
+
+.accordion-meme {
+    display: none;
+}
+
+.accordion-items:hover {
+    cursor: pointer;
+}
+
+.accordion-meme:target,
+.accordion-items:hover > .accordion-meme {
+    display: flex;
+    justify-content: center;
+}
