@@ -8,6 +8,11 @@ a {
     color: black;
 }
 
+body {
+    font-size: 2rem;
+    font-weight: 800;
+}
+
 .accordion {
     display: grid;
     grid-template-columns: 1fr;
@@ -43,7 +48,7 @@ a {
 }
 
 .accordion-meme img {
-    height: 15rem;
+    height: 30rem;
 }
 
 .accordion-meme {
@@ -63,4 +68,38 @@ a {
     display: flex;
     justify-content: center;
     animation: fadeIn 0.5s;
+}
+
+@media screen and (max-width: 1100px) {
+    body {
+        font-size: 1.5rem;
+        font-weight: 700;
+    }
+
+    .wrapper {
+        width: 76%;
+    }
+
+    .accordion-meme img {
+        height: 20rem;
+    }
+}
+
+@media screen and (max-width: 660px) {
+    body {
+        font-size: 1rem;
+        font-weight: 600;
+    }
+
+    .accordion-meme img {
+        height: 12rem;
+    }
+
+    .wrapper {
+        width: 94%;
+    }
+
+    .plus-icon {
+        width: 1rem;
+    }
 }
