@@ -1,3 +1,8 @@
+@keyframes fadeIn {
+    from { opacity: 0; }
+      to { opacity: 1; }
+}
+
 a {
     text-decoration: none;
     color: black;
@@ -44,9 +49,6 @@ a {
 .accordion-meme {
     display: none;
 }
-.accordion-items {
-    transition: 1s all linear;
-}
 
 .accordion-items:hover {
     cursor: pointer;
@@ -60,4 +62,5 @@ a {
 .accordion-items:hover > .accordion-meme {
     display: flex;
     justify-content: center;
+    animation: fadeIn 0.5s;
 }
